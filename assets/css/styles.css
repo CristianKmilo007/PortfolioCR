@@ -744,6 +744,7 @@ img {
   font-size: 1.5rem;
   color: var(--first-color);
   cursor: pointer;
+  z-index: 1;
 }
 
 .services__modal-icon{
@@ -1052,7 +1053,19 @@ img {
 
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
+
 @media screen and (max-width: 350px){
+  .services__modal video{
+    width: 330px !important;
+  }
+
+  .services__modal-contentv{
+    padding: 5px 5px 1px 5px !important;
+  }
+}
+
+
+@media screen and (min-width: 350px){
   .container{
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
@@ -1093,6 +1106,14 @@ img {
 
   .services__modal{
     padding: 0 .5rem;
+  }
+
+  .services__modal video{
+    width: 330px !important;
+  }
+
+  .services__modal-contentv{
+    padding: 5px 5px 1px 5px !important;
   }
 
   .testimonial__data,
@@ -1144,6 +1165,14 @@ img {
     display: grid;
     grid-template-columns: .7fr;
     justify-content: center;
+  }
+
+  .services__modal video{
+    width: 500px !important;
+  }
+
+  .services__modal-contentv{
+    padding: 5px 5px 1px 5px !important;
   }
 
   .testimonial__data,
@@ -1302,6 +1331,14 @@ img {
     width: 450px;
   }
 
+  .services__modal video{
+    width: 660px !important;
+  }
+
+  .services__modal-contentv{
+    padding: 5px 5px 1px 5px !important;
+  }
+
   .portafolio__img{
     width: 350px;
     height: 200px;
@@ -1372,6 +1409,14 @@ img {
 
   .portafolio__content{
     column-gap: 3rem;
+  }
+
+  .services__modal video{
+    width: 1000px !important;
+  }
+
+  .services__modal-contentv{
+    padding: 10px 10px 4px 10px !important;
   }
 
   .swiper-portafolio-icon{

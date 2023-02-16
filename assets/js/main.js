@@ -89,7 +89,9 @@ tabs.forEach(tab =>{
 
 const modalViews = document.querySelectorAll('.services__modal'),
       modalBtns = document.querySelectorAll('.services__button'),
-      modalCloses = document.querySelectorAll('.services__modal-close')
+      modalCloses = document.querySelectorAll('.services__modal-close'),
+      video1 = document.getElementById('video1'),
+      video2 = document.getElementById('video2')
 
 let modal = function(modalClick){
     modalViews[modalClick].classList.add('active-modal')
@@ -98,6 +100,10 @@ let modal = function(modalClick){
 modalBtns.forEach((modalBtn, i)=>{
     modalBtn.addEventListener('click', ()=>{
         modal(i)
+        video1.play()
+        video1.currentTime = 0
+        video2.play()
+        video2.currentTime = 0
     })
 })
 
